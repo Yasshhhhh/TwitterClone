@@ -1,0 +1,26 @@
+.Feed
+{
+    flex: 0.5;
+    border-right:1px solid var( --twitter-background);
+    height: 100vh;
+    min-height: 1300px;
+    overflow-y: scroll;
+}
+.Feed::-webkit-scrollbar
+{
+    display: none;
+}
+.Feed--header
+{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+.Feed--header>h2
+{
+    font-size: 20px;
+    font-weight: 800;
+}
