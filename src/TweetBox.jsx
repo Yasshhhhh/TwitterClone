@@ -1,5 +1,6 @@
 import React from 'react'
 import "./css/TweetBox.css"
+import yash from"./YASH.jpg"
 import { Avatar,Button } from '@mui/material';
 import { useState } from 'react';
 import db from './firebase';
@@ -24,7 +25,7 @@ function TweetBox()
         Text:tweet,
         UserName:'yashh',
         Verified:true,
-        avatar:'https://yt3.ggpht.com/ytc/AKedOLRbdv3Di8paQyrgMF_VwFXPkhwVzcW59Vgo8dTsyw=s88-c-k-c0x00ffffff-no-rj',
+        avatar:'https://yt3.ggpht.com/ytc/AKedOLRbdv3Di8paQyrgMF_VwFXPkhwVzcW59Vgo8dTsyw=s88-c-k-c0x00ffffff-no-',
         displayName:'Yash Anil'
 
       }

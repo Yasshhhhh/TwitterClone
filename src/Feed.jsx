@@ -5,13 +5,25 @@ import Post from './Post'
 import TweetBox from './TweetBox'
 import db from './firebase'
 function Feed() {
-  const [posts,setPosts]= useState([]);
+  let [posts,setPosts]= useState([]);
+  posts= [
+  {
+    Image:"",
+Text:"Welcome to my Twitter Clone",
+UserName:"yash",
+Verified:true,
+avatar:"./css/yashpic.jpg",
+displayName:"Yash Anil",
+    
+  }
+]
   useEffect( ()=>
   {
     db.collection('posts').onSnapshot(snapshot => (
       setPosts(snapshot.docs.map(doc =>doc.data()))
     ))
   },[])
+  console.log(posts);
 
   return (
     <div className='Feed'> 
